@@ -62,6 +62,9 @@ def create_map():
     indianapolis.setheading(90)
     indianapolis.penup()
     indianapolis.goto(float(indy_long), float(indy_lat))
+    style = ('Courier', 12)
+    indianapolis.write('Next ISS passover for\nIndianapolis is\n' +
+                   passover_risetime + '.', font=style, align='left')
     
     turtle.done()
 
